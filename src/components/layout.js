@@ -14,18 +14,32 @@ import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query {
       site {
         siteMetadata {
           title
+        }
+      }
+      
+      logo: file(relativePath: { eq: "logos/colorcollect-mobile-logo.png" }) {
+        childImageSharp {
+          fixed(width: 24, height: 24) {
+            base64
+            width
+            height
+            src
+            srcSet
+          }
         }
       }
     }
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <div className="wrapper">
+      <Header siteTitle={data.site.siteMetadata.title}
+              logo={data.logo.childImageSharp.fixed}
+      />
       <div
         style={{
           margin: `0 auto`,
@@ -41,7 +55,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>
       </div>
-    </>
+    </div>
   )
 }
 

@@ -1,0 +1,24 @@
+.header {
+  padding: 64px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header img {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  height: 24px;
+}
+
+.language {
+
+}
+
+.logo {
+  display: inline-block;
+}
+
+.menu {
+
+}
