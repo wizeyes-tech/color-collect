@@ -1,18 +1,18 @@
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import React from "react"
 import headerStyles from "./header.module.css"
 
 
-const Header = ({ siteTitle, logo }) => (
+const Header = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) => (
   <header className={headerStyles.header}>
-    {/*<Img fixed={data.file.childImageSharp.fixed} />*/}
-    {/*<img src={iconLanCN} alt="访问色采中文网站" className={headerStyles.language}/>*/}
+    <Img fixed={iconLan} title={lanTitle} alt={lanTitle} />
     <Link to="/" className={headerStyles.logo}>
       <Img fixed={logo} title={siteTitle} alt={siteTitle + ` Logo`} />
     </Link>
-    {/*<img src={iconMenu} alt="Open Menu" className={headerStyles.menu}/>*/}
+    <Img fixed={iconMenu} title="Open Menu" alt="Open Menu" />
+    {/*<Img fixed={iconClose} title="Close Menu" alt="Close Menu" />*/}
   </header>
 )
 

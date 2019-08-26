@@ -1,15 +1,15 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
-import Img from "gatsby-image"
+// import { graphql, Link } from "gatsby"
+// import Img from "gatsby-image"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+// import Image from "../components/image"
 import SEO from "../components/seo"
 
 import iOSDownload from "../images/button/download-ios.png"
 import androidDownload from "../images/button/download-android.png"
 
-const IndexPage = ({ data }) => (
+const IndexPage = () => (
   <Layout>
     <SEO title="Home"/>
     <div>INTRODUCING</div>
