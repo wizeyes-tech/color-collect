@@ -84,17 +84,21 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="wrapper">
-      <Header siteTitle={data.site.siteMetadata.title}
-              logo={data.logo.childImageSharp.fixed}
-              iconMenu={data.iconMenu.childImageSharp.fixed}
-              iconClose={data.iconClose.childImageSharp.fixed}
-              iconLan={data.iconLanCN.childImageSharp.fixed}
-              lanTitle={`访问色采中文网站`}
-      />
-      <main>{children}</main>
+    <div>
+      <div className="wrapper">
+        <Header siteTitle={data.site.siteMetadata.title}
+                logo={data.logo.childImageSharp.fixed}
+                iconMenu={data.iconMenu.childImageSharp.fixed}
+                iconClose={data.iconClose.childImageSharp.fixed}
+                iconLan={data.iconLanCN.childImageSharp.fixed}
+                lanTitle={`访问色采中文网站`}
+        />
+        <main>{children}</main>
+      </div>
       <footer>
-        © {new Date().getFullYear()} All rights reserved
+        <div className="wrapper">
+          <span className="type--body-xsmall type--on-dark">© {new Date().getFullYear()} All rights reserved</span>
+        </div>
       </footer>
     </div>
   )
