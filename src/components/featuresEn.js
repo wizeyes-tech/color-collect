@@ -55,7 +55,6 @@ const FeaturesEn = () => {
 
 FeaturesEn.propType = {}
 
-
 FeaturesEn.defaultProp = {}
 
 export default FeaturesEn
