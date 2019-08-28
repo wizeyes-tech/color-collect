@@ -3,6 +3,8 @@ module.exports = {
     title: `Color Collect`,
     description: `A color app for everyone.`,
     author: `@carson`,
+    titleCN: `色采`,
+    descriptionCN: `写给大家用的配色应用。寻找配色灵感，轻松搭配出好色彩。`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
