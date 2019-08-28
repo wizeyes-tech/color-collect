@@ -34,19 +34,14 @@ const Downloads = () => {
   return (
     <div>
       <a href="https://apps.apple.com/cn/app/id1439521846"
-         target="_blank"
-         style={{
-           margin: "0 12px 0 0",
-         }}
+         style={{ margin: "0 12px 0 0", }}
       >
         <Img fixed={data.ios.childImageSharp.fixed}
              title={`Download Color Collect for iOS`}
              alt={`Download Color Collect for iOS`}
         />
       </a>
-      <a href="https://play.google.com/store/apps/details?id=com.wizeyes.colorcapture"
-         target="_blank"
-      >
+      <a href="https://play.google.com/store/apps/details?id=com.wizeyes.colorcapture">
         <Img fixed={data.android.childImageSharp.fixed}
              title={`Download Color Collect for Android`}
              alt={`Download Color Collect for Android`}

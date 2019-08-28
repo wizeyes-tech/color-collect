@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import Downloads from "../components/downloads"
 import Features from "../components/features"
 
+import './index.css'
+
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {

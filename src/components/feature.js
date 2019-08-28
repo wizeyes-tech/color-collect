@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 
 const Feature = ({ title, desc, image }) => {
   return (
-    <div style={{margin: '96px 0'}}>
+    <div style={{margin: '64px 0'}}>
       <h2 className="type--h3">{title}</h2>
       <p className="type--body-small">{desc}</p>
       <Img fluid={image} />
