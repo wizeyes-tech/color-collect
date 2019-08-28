@@ -676,6 +676,7 @@ pre tt:after {
 
 .wrapper {
   padding: 0 32px;
+  overflow: hidden;
 }
 
 .type--h1 {

@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 // import Image from "../components/image"
 import SEO from "../components/seo"
 import Downloads from "../components/downloads"
+import Features from "../components/features"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -26,8 +27,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home"/>
+
+      {/* Hero */}
       <div style={{
-        position: 'relative',
+        position: "relative",
         paddingBottom: 215,
       }}>
 
@@ -35,7 +38,7 @@ const IndexPage = () => {
         <h1 className="type--h2" style={{ margin: "0 0 10px 0" }}>Color Collect</h1>
         <p>A color app for everyone.</p>
 
-        <Downloads />
+        <Downloads/>
 
         <Link to={"/"}
               className={"type--link"}
@@ -49,12 +52,15 @@ const IndexPage = () => {
 
         <Img fixed={data.mockup.childImageSharp.fixed}
              style={{
-               position: 'absolute',
+               position: "absolute",
                right: -72,
                top: 125,
              }}
         />
       </div>
+
+      <Features />
+
     </Layout>
   )
 }
