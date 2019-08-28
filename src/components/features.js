@@ -1,51 +1,22 @@
 import React from "react"
-import Feature from "./feature"
-import { graphql, useStaticQuery } from "gatsby"
+import PropTypes from "prop-types"
+import FeaturesEn from "./featuresEn"
+import FeaturesCn from "./featuresCn"
 
-const Features = () => {
-  const imageQuery = useStaticQuery(graphql`
-    query {
-      cameraEn: file(relativePath: { eq: "features/camera-en.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 768) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      
-      photosEn: file(relativePath: { eq: "features/photos-en.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 768) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      
-      previewEn: file(relativePath: { eq: "features/preview-en.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 768) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+const Features = ({ language }) => {
+  if (language === "en") {
+    return <FeaturesEn/>
+  } else if (language === "cn") {
+    return <FeaturesCn/>
+  }
+}
 
-  return (
-    <div>
-      <Feature title={`Real-time capture`}
-               desc={`Eu facilisi ut ullamcorper aenean mattis. Eu facilisi ut ullamcorper aenean mattis.`}
-               image={imageQuery.cameraEn.childImageSharp.fluid}/>
+Features.propType = {
+  language: PropTypes.string,
+}
 
-      <Feature title={`Explore 600+ palettes`}
-               desc={`Eu facilisi ut ullamcorper aenean mattis. Eu facilisi ut ullamcorper aenean mattis.`}
-               image={imageQuery.photosEn.childImageSharp.fluid}/>
-
-      <Feature title={`Photo color palettes`}
-               desc={`Eu facilisi ut ullamcorper aenean mattis. Eu facilisi ut ullamcorper aenean mattis.`}
-               image={imageQuery.previewEn.childImageSharp.fluid}/>
-    </div>
-  )
+Features.defaultProp = {
+  language: `en`,
 }
 
 export default Features

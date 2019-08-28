@@ -61,7 +61,7 @@ const IndexPage = () => {
         />
       </div>
 
-      <Features />
+      <Features language={`en`} />
 
     </Layout>
   )
