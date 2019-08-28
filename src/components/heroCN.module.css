@@ -1,0 +1,44 @@
+.content-wrapper {
+  position: relative;
+}
+
+.content {
+  height: 240px;
+  position: absolute;
+  right: 12px;
+  top: 42px;
+  writing-mode: tb-rl;
+  text-align: left;
+  letter-spacing: 0.1em;
+}
+
+.content h1 {
+  margin-left: 8px;
+  letter-spacing: 0.25em;
+}
+
+.content p {
+  margin: 0 2px;
+  padding: 0 2px;
+  display: inline-block;
+  border-left: 2px solid #F0F4F8;
+}
+
+.cta {
+  margin: 42px 0 0 0;
+  display: block;
+  position: absolute;
+  right: 115px;
+  bottom: 28px;
+  writing-mode: tb-rl;
+  text-align: left;
+  color: #E8368F;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.downloads-wrapper {
+  margin: 21px 0 0 29px;
+}

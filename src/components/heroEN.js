@@ -7,7 +7,7 @@ import Img from "gatsby-image"
 const HeroEN = () => {
   const data = useStaticQuery(graphql`
     query {
-      mockup: file(relativePath: { eq: "mockups/face.png" }) {
+      mockup: file(relativePath: { eq: "mockups/faceEN.png" }) {
         childImageSharp {
           fixed(width: 203, height: 319) {
             base64
