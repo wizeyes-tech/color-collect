@@ -4,7 +4,7 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 
-const HeroCn = () => {
+const HeroCN = () => {
   const data = useStaticQuery(graphql`
     query {
       mockup: file(relativePath: { eq: "mockups/face.png" }) {
@@ -55,9 +55,9 @@ const HeroCn = () => {
 }
 
 
-HeroCn.propType = {}
+HeroCN.propType = {}
 
-HeroCn.defaultProp = {}
+HeroCN.defaultProp = {}
 
-export default HeroCn
+export default HeroCN
 

@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import FeaturesEn from "./featuresEn"
-import FeaturesCn from "./featuresCn"
+import FeaturesEN from "./featuresEN"
+import FeaturesCN from "./featuresCN"
 
 const Features = ({ language }) => {
   if (language === "en") {
-    return <FeaturesEn/>
+    return <FeaturesEN/>
   } else if (language === "cn") {
-    return <FeaturesCn/>
+    return <FeaturesCN/>
   }
 }
 

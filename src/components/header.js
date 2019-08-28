@@ -1,7 +1,7 @@
 import PropTypes from "prop-types"
 import React from "react"
-import HeaderEn from "./headerEn"
-import HeaderCn from "./headerCn"
+import HeaderEN from "./headerEN"
+import HeaderCN from "./headerCN"
 import { graphql, useStaticQuery } from "gatsby"
 
 
@@ -79,7 +79,7 @@ const Header = ({ language }) => {
 
   if (language === 'en') {
     return (
-      <HeaderEn siteTitle={data.site.siteMetadata.title}
+      <HeaderEN siteTitle={data.site.siteMetadata.title}
                 logo={data.logo.childImageSharp.fixed}
                 iconMenu={data.iconMenu.childImageSharp.fixed}
                 iconClose={data.iconClose.childImageSharp.fixed}
@@ -89,7 +89,7 @@ const Header = ({ language }) => {
     )
   } else if (language === 'cn') {
     return (
-      <HeaderCn siteTitle={data.site.siteMetadata.titleCN}
+      <HeaderCN siteTitle={data.site.siteMetadata.titleCN}
                 logo={data.logo.childImageSharp.fixed}
                 iconMenu={data.iconMenu.childImageSharp.fixed}
                 iconClose={data.iconClose.childImageSharp.fixed}

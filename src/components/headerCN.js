@@ -5,26 +5,27 @@ import React from "react"
 import headerStyles from "./header.module.css"
 
 
-const HeaderCn = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) => {
+const HeaderCN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) => {
   return (
     <header className={headerStyles.header}>
-      Chinese
-      <Img fixed={iconLan} title={lanTitle} alt={lanTitle} />
-      <Link to="/" className={headerStyles.logo}>
-        <Img fixed={logo} title={siteTitle} alt={siteTitle + ` Logo`} />
+      <Link to={`/`}>
+        <Img fixed={iconLan} title={lanTitle} alt={lanTitle}/>
       </Link>
-      <Img fixed={iconMenu} title="Open Menu" alt="Open Menu" />
+      <Link to="/" className={headerStyles.logo}>
+        <Img fixed={logo} title={siteTitle} alt={siteTitle + ` Logo`}/>
+      </Link>
+      <Img fixed={iconMenu} title="Open Menu" alt="Open Menu"/>
       {/*<Img fixed={iconClose} title="Close Menu" alt="Close Menu" />*/}
     </header>
   )
 }
 
-HeaderCn.propTypes = {
+HeaderCN.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-HeaderCn.defaultProps = {
+HeaderCN.defaultProps = {
   siteTitle: ``,
 }
 
-export default HeaderCn
+export default HeaderCN

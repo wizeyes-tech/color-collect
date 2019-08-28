@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import HeroEn from "./heroEn"
-import HeroCn from "./heroCn"
+import HeroEN from "./heroEN"
+import HeroCN from "./heroCN"
 
 const Hero = ({ language }) => {
   if (language === "en") {
-    return <HeroEn/>
+    return <HeroEN/>
   } else if (language === "cn") {
-    return <HeroCn/>
+    return <HeroCN/>
   }
 }
 

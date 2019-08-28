@@ -2,7 +2,7 @@ import React from "react"
 import Feature from "./feature"
 import { graphql, useStaticQuery } from "gatsby"
 
-const FeaturesEn = () => {
+const FeaturesEN = () => {
   const imageQuery = useStaticQuery(graphql`
     query {
       cameraEn: file(relativePath: { eq: "features/camera-en.png" }) {
@@ -53,8 +53,8 @@ const FeaturesEn = () => {
   )
 }
 
-FeaturesEn.propType = {}
+FeaturesEN.propType = {}
 
-FeaturesEn.defaultProp = {}
+FeaturesEN.defaultProp = {}
 
-export default FeaturesEn
+export default FeaturesEN

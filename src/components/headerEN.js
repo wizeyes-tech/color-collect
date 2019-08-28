@@ -5,11 +5,13 @@ import React from "react"
 import headerStyles from "./header.module.css"
 
 
-const HeaderEn = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) => {
+const HeaderEN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) => {
   return (
     <header className={headerStyles.header}>
-      <Img fixed={iconLan} title={lanTitle} alt={lanTitle} />
-      <Link to="/" className={headerStyles.logo}>
+      <Link to={`/cn/`}>
+        <Img fixed={iconLan} title={lanTitle} alt={lanTitle} />
+      </Link>
+      <Link to="/cn/" className={headerStyles.logo}>
         <Img fixed={logo} title={siteTitle} alt={siteTitle + ` Logo`} />
       </Link>
       <Img fixed={iconMenu} title="Open Menu" alt="Open Menu" />
@@ -18,12 +20,12 @@ const HeaderEn = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) =
   )
 }
 
-HeaderEn.propTypes = {
+HeaderEN.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-HeaderEn.defaultProps = {
+HeaderEN.defaultProps = {
   siteTitle: ``,
 }
 
-export default HeaderEn
+export default HeaderEN
