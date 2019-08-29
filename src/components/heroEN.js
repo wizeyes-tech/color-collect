@@ -2,14 +2,26 @@ import React from "react"
 import Downloads from "./downloads"
 import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import styles from "./heroEN.module.css"
 
 
 const HeroEN = () => {
   const data = useStaticQuery(graphql`
     query {
-      mockup: file(relativePath: { eq: "mockups/faceEN.png" }) {
+      mockupMobile: file(relativePath: { eq: "mockups/faceEN.png" }) {
         childImageSharp {
           fixed(width: 203, height: 319) {
+            base64
+            width
+            height
+            src
+            srcSet
+          }
+        }
+      }
+      mockupDesktop: file(relativePath: { eq: "mockups/faceEN.png" }) {
+        childImageSharp {
+          fixed(width: 320) {
             base64
             width
             height
@@ -27,29 +39,28 @@ const HeroEN = () => {
       paddingBottom: 215,
     }}>
 
-      <div className="type--note">INTRODUCING</div>
-      <h1 className="type--h2" style={{ margin: "0 0 10px 0" }}>Color Collect</h1>
-      <p>A color app for everyone.</p>
+      <div className={styles.note}>INTRODUCING</div>
+      <h1 className={styles.title}>Color Collect</h1>
+      <p className={styles.subtitle}>A color app for everyone.</p>
 
-      <Downloads/>
+      <div className={styles.downloads}>
+        <Downloads/>
+      </div>
 
       <Link to={"/"}
-            className={"type--link"}
-            style={{
-              margin: "42px 0 0 0",
-              display: "block",
-            }}
+            className={styles.paletteLink}
       >
         Explore palettes →
       </Link>
 
-      <Img fixed={data.mockup.childImageSharp.fixed}
-           style={{
-             position: "absolute",
-             right: -72,
-             top: 125,
-           }}
-      />
+      <div className={styles.mockup}>
+        <div className={styles.mockupMobile}>
+          <Img fixed={data.mockupMobile.childImageSharp.fixed}/>
+        </div>
+        <div className={styles.mockupDesktop}>
+          <Img fixed={data.mockupDesktop.childImageSharp.fixed}/>
+        </div>
+      </div>
     </div>
   )
 }

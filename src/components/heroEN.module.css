@@ -1,0 +1,78 @@
+.note {
+  font-weight: 800;
+  font-size: 12px;
+  color: #486581;
+}
+
+.title {
+  margin: 0 0 10px 0;
+  padding: 0;
+  color: #102A43;
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.subtitle {
+  color: #102A43;
+  font-size: 16px;
+}
+
+.palette-link {
+  margin: 42px 0 0 0;
+  display: block;
+  color: #E8368F;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.mockup {
+  position: absolute;
+  right: -72px;
+  top: 125px;
+}
+
+.mockup img {
+  width: 203px;
+}
+
+.mockup-desktop {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .note {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+  }
+
+  .title {
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1.5;
+  }
+
+  .downloads {
+    margin-top: 48px;
+  }
+
+  .mockup {
+    right: 0;
+    top: 0;
+  }
+
+  .mockup-mobile {
+    display: none;
+  }
+
+  .mockup-desktop {
+    display: block;
+  }
+}
