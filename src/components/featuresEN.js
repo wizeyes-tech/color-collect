@@ -1,6 +1,7 @@
 import React from "react"
 import Feature from "./feature"
 import { graphql, useStaticQuery } from "gatsby"
+import styles from "./feature.module.css"
 
 const FeaturesEN = () => {
   const imageQuery = useStaticQuery(graphql`
@@ -34,7 +35,7 @@ const FeaturesEN = () => {
 
 
   return (
-    <div>
+    <div className={styles.features}>
       <Feature title={`Real-time capture`}
                desc={`Eu facilisi ut ullamcorper aenean mattis. Eu facilisi ut ullamcorper aenean mattis.`}
                image={imageQuery.cameraEn.childImageSharp.fluid}

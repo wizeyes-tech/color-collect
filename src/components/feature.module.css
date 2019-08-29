@@ -1,0 +1,32 @@
+.feature {
+  margin: 64px 0;
+}
+
+@media (min-width: 600px) {
+  .features {
+
+  }
+
+  .feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-template-areas: "image content";
+  }
+
+  .feature:nth-child(2n) {
+    grid-template-areas: "content image";
+  }
+
+  .feature h2 {
+    margin-top: 0;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .image {
+    grid-area: image;
+  }
+}
