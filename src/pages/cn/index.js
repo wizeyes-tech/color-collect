@@ -5,6 +5,7 @@ import SEO from "../../components/seo"
 import Features from "../../components/features"
 import Hero from "../../components/hero"
 import PartnersCN from "../../components/partnersCN"
+import CreditsCN from "../../components/CreditsCN"
 
 import '../index.css'
 
@@ -15,6 +16,7 @@ const IndexPage = () => {
       <Hero language={`cn`} />
       <Features language={`cn`} />
       <PartnersCN />
+      <CreditsCN />
     </Layout>
   )
 }
