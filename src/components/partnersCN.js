@@ -1,7 +1,7 @@
 import React from "react"
 import Partner from "./partner"
 import { graphql, useStaticQuery } from "gatsby"
-
+import styles from "./partner.module.css"
 
 const PartnersCN = () => {
   const imageQuery = useStaticQuery(graphql`
@@ -24,16 +24,18 @@ const PartnersCN = () => {
   `)
 
   return (
-    <div style={{ margin: '64px 0' }}>
+    <div className={styles.partnersWrapper}>
       <h2 className="type--h3" style={{ fontWeight: 600 }}>合作伙伴</h2>
-      <Partner icon={imageQuery.memoryHelper.childImageSharp.fixed}
-               name={`Memory Helper`}
-               link={`/`}
-      />
-      <Partner icon={imageQuery.fanqieqingdan.childImageSharp.fixed}
-               name={`番茄清单`}
-               link={`/`}
-      />
+      <div className={styles.partners}>
+        <Partner icon={imageQuery.memoryHelper.childImageSharp.fixed}
+                 name={`Memory Helper`}
+                 link={`/`}
+        />
+        <Partner icon={imageQuery.fanqieqingdan.childImageSharp.fixed}
+                 name={`番茄清单`}
+                 link={`/`}
+        />
+      </div>
     </div>
   )
 }
