@@ -31,7 +31,7 @@ const CreditsCN = () => {
   `)
 
   return (
-    <div style={{ margin: "64px 0" }}>
+    <div className={styles.creditsWrapper}>
       <h2 className="type--h3" style={{ fontWeight: 600 }}>特别鸣谢</h2>
 
       <div className={styles.credits}>
