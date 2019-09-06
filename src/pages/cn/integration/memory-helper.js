@@ -5,7 +5,7 @@ import "../../../components/typography.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const memoryHelperPage = () => {
+const MemoryHelperPage = () => {
   const images = useStaticQuery(graphql`
     query {
      
@@ -121,4 +121,4 @@ const memoryHelperPage = () => {
   )
 }
 
-export default memoryHelperPage
+export default MemoryHelperPage

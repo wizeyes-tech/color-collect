@@ -5,7 +5,7 @@ import "../../../components/typography.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const justListPage = () => {
+const JustListPage = () => {
   const images = useStaticQuery(graphql`
     query {
      
@@ -124,4 +124,4 @@ const justListPage = () => {
   )
 }
 
-export default justListPage
+export default JustListPage

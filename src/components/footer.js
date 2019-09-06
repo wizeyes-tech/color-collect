@@ -60,8 +60,8 @@ const Footer = ({
           <div className={styles.copyrightPolicy}>
             <div>© {new Date().getFullYear()} All rights reserved</div>
             <div className={styles.policy}>
-              <Link to={"/"}>{policyTitle}</Link>
-              <Link to={"/"}>{termsTitle}</Link>
+              <Link to={"/privacy-policy"}>{policyTitle}</Link>
+              <Link to={"/terms-of-services"}>{termsTitle}</Link>
             </div>
           </div>
 

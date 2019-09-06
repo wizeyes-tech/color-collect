@@ -237,8 +237,17 @@
   border-radius: 8px;
 }
 
+.article ul,
+.article ol {
+  margin-left: 0;
+}
+
+.article.ordered-title h2 {
+  margin-left: -23px;
+}
+
 @media (min-width: 600px) {
-  .article p {
-    font-size: 16px;
-  }
+  /*.article p {*/
+  /*  font-size: 16px;*/
+  /*}*/
 }
