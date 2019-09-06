@@ -9,6 +9,7 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children, language }) => {
@@ -18,11 +19,11 @@ const Layout = ({ children, language }) => {
         <Header language={language}/>
         <main>{children}</main>
       </div>
-      <footer>
-        <div className="wrapper">
-          <span className="type--body-xsmall type--on-dark">© {new Date().getFullYear()} All rights reserved</span>
-        </div>
-      </footer>
+      <Footer homeLink={`/`}
+              homeTitle={`Home`}
+              policyTtile={`Privacy Policy`}
+              termsTitle={`Terms of Use`}
+      />
     </div>
   )
 }

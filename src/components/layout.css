@@ -821,10 +821,3 @@ pre tt:after {
   line-height: 20px;
   text-decoration: none;
 }
-
-footer {
-  padding: 48px 0;
-  /*margin-top: 64px;*/
-  background-color: #102A43;
-  text-align: center;
-}

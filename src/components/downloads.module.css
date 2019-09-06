@@ -1,10 +1,15 @@
 .download-item {
   display: inline-block;
   margin: 0 12px 0 0;
+  transition: filter 500ms ease 0s;
 }
 
 .download-item:last-child {
   margin-right: 0;
+}
+
+.download-item:hover {
+  filter: hue-rotate(90deg);
 }
 
 .download-item img {
@@ -13,8 +18,8 @@
 
 .download-desktop {
   display: none;
-  width: 64px;
-  height: 64px;
+  /*width: 64px;*/
+  /*height: 64px;*/
 }
 
 @media (min-width: 600px) {

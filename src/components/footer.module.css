@@ -1,0 +1,49 @@
+footer {
+  padding: 48px 0;
+  background-color: #102A43;
+  font-size: 14px;
+  text-align: center;
+  color: #F0F4F8;
+}
+
+footer a {
+  color: #F0F4F8;
+  text-decoration: none;
+}
+
+.desktop {
+  display: none;
+}
+
+.nav {
+margin-bottom: 36px;
+}
+
+.nav a {
+  display: block;
+}
+
+.copyright-policy {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.policy a {
+  display: inline-block;
+  margin-left: 24px;
+}
+
+@media (min-width: 600px) {
+  footer {
+    text-align: left;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
