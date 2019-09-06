@@ -3,7 +3,7 @@ import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import styles from "./downloads.module.css"
 
-const Downloads = () => {
+const Downloads = ({iosTitle, iosLink, androidTitle, androidLink}) => {
   const data = useStaticQuery(graphql`
     query {
       iosMobile: file(relativePath: { eq: "button/download-ios.png" }) {
@@ -58,35 +58,35 @@ const Downloads = () => {
 
   return (
     <Fragment>
-      <a href="https://apps.apple.com/cn/app/id1439521846"
+      <a href={iosLink}
          className={styles.downloadItem}
       >
         <span className={styles.downloadMobile}>
         <Img fixed={data.iosMobile.childImageSharp.fixed}
-             title={`Download Color Collect for iOS`}
-             alt={`Download Color Collect for iOS`}
+             title={iosTitle}
+             alt={iosTitle}
         />
         </span>
         <span className={styles.downloadDesktop}>
         <Img fixed={data.iosDesktop.childImageSharp.fixed}
-             title={`Download Color Collect for iOS`}
-             alt={`Download Color Collect for iOS`}
+             title={iosTitle}
+             alt={iosTitle}
         />
         </span>
       </a>
-      <a href="https://play.google.com/store/apps/details?id=com.wizeyes.colorcapture"
+      <a href={androidLink}
          className={styles.downloadItem}
       >
         <span className={styles.downloadMobile}>
         <Img fixed={data.androidMobile.childImageSharp.fixed}
-             title={`Download Color Collect for Android`}
-             alt={`Download Color Collect for Android`}
+             title={androidTitle}
+             alt={androidTitle}
         />
         </span>
         <span className={styles.downloadDesktop}>
         <Img fixed={data.androidDesktop.childImageSharp.fixed}
-             title={`Download Color Collect for Android`}
-             alt={`Download Color Collect for Android`}
+             title={androidTitle}
+             alt={androidTitle}
         />
         </span>
       </a>

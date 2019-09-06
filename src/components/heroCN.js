@@ -54,14 +54,18 @@ const HeroCN = () => {
           <p>轻松搭配出好色彩。</p>
         </div>
 
-        <Link to={"/"} className={styles.cta}>
-          探索色卡 <span style={{ writingMode: "lr" }}>→</span>
-        </Link>
+        {/*<Link to={"/"} className={styles.cta}>*/}
+        {/*  探索色卡 <span style={{ writingMode: "lr" }}>→</span>*/}
+        {/*</Link>*/}
       </div>
 
 
       <div className={styles.downloadsWrapper}>
-        <Downloads/>
+        <Downloads iosTitle={`从苹果商店下载色采 iOS 版本`}
+                   iosLink={`https://apps.apple.com/cn/app/id1439521846`}
+                   androidTitle={`下载色采安卓版本`}
+                   androidLink={`https://www.coolapk.com/apk/231885`}
+        />
       </div>
 
     </div>

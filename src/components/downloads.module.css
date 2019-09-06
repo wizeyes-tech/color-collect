@@ -19,7 +19,7 @@
 
 @media (min-width: 600px) {
   .download-item {
-    margin: 0 0 24px 0;
+    margin: 0 12px 24px 0;
   }
 
   .download-item:last-child {
