@@ -7,7 +7,9 @@ const Footer = ({
                   homeLink, homeTitle,
                   integrationLink, integrationTitle,
                   creditLink, creditTitle,
-                  policyTtile, termsTitle,
+                  policyTitle, termsTitle,
+                  iosTitle, iosLink,
+                  androidTitle, androidLink
                 }) => {
   function HomeNav() {
     if (homeLink) {
@@ -49,16 +51,16 @@ const Footer = ({
           </div>
 
           <Downloads size={`s`}
-                     iosTitle={`Download Color Collect for iOS`}
-                     iosLink={`https://apps.apple.com/app/id1439521846`}
-                     androidTitle={`Download Color Collect for Android`}
-                     androidLink={`https://play.google.com/store/apps/details?id=com.wizeyes.colorcapture`}
+                     iosTitle={iosTitle}
+                     iosLink={iosLink}
+                     androidTitle={androidTitle}
+                     androidLink={androidLink}
           />
 
           <div className={styles.copyrightPolicy}>
             <div>© {new Date().getFullYear()} All rights reserved</div>
             <div className={styles.policy}>
-              <Link to={"/"}>{policyTtile}</Link>
+              <Link to={"/"}>{policyTitle}</Link>
               <Link to={"/"}>{termsTitle}</Link>
             </div>
           </div>
