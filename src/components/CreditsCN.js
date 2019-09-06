@@ -37,7 +37,7 @@ const CreditsCN = () => {
       <div className={styles.credits}>
         <Credit icon={imageQuery.priceTag.childImageSharp.fixed}
                 name={`Price Tag`}
-                link={`/`}
+                link={`https://www.weibo.com/u/6087949803`}
         />
         <Credit icon={imageQuery.sspai.childImageSharp.fixed}
                 name={`少数派`}
