@@ -2,6 +2,12 @@
   margin: 64px 0;
 }
 
+.partners {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 12px;
+}
+
 @media (min-width: 600px) {
   .partners-wrapper h2 {
     text-align: center;
@@ -9,7 +15,6 @@
   }
 
   .partners {
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 48px 32px;
   }

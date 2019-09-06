@@ -14,15 +14,15 @@ const HeaderEN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) =
       <Link to="/cn/" className={styles.logo}>
         <Img fixed={logo} title={siteTitle} alt={siteTitle + ` Logo`} />
       </Link>
-      <div className={styles.menu}>
-        <div className={styles.menuTrigger}>
-          <Img fixed={iconMenu} title="Open Menu" alt="Open Menu" />
-          {/*<Img fixed={iconClose} title="Close Menu" alt="Close Menu" />*/}
-        </div>
-        <div className={styles.menuList}>
-          {/*<Link to={`/`}>Palettes</Link>*/}
-        </div>
-      </div>
+      {/*<div className={styles.menu}>*/}
+      {/*  <div className={styles.menuTrigger}>*/}
+      {/*    <Img fixed={iconMenu} title="Open Menu" alt="Open Menu" />*/}
+      {/*    /!*<Img fixed={iconClose} title="Close Menu" alt="Close Menu" />*!/*/}
+      {/*  </div>*/}
+      {/*  <div className={styles.menuList}>*/}
+      {/*    /!*<Link to={`/`}>Palettes</Link>*!/*/}
+      {/*  </div>*/}
+      {/*</div>*/}
     </header>
   )
 }

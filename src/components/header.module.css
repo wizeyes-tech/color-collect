@@ -1,8 +1,8 @@
 .header {
   padding: 64px 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "language logo menu";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "logo language";
   align-items: center;
 }
 
@@ -16,12 +16,13 @@
 .language {
   grid-area: language;
   display: grid;
+  justify-content: flex-end;
 }
 
 .logo {
   grid-area: logo;
   display: grid;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .menu {
