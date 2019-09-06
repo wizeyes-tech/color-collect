@@ -26,21 +26,21 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-33318b3098072393328a.js"
+    "url": "webpack-runtime-810a824a3899d42305a1.js"
   },
   {
-    "url": "app-fae6633a4e378c9bd458.js"
+    "url": "app-73358509dbaa4b391b0b.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-c350b13595849e3b2893.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "72db678c37c8cfea3360f1c470e92721"
+    "revision": "fa77f0b8d782374a38ba4e0703cc4476"
   },
   {
     "url": "page-data/offline-plugin-app-shell-fallback/page-data.json",
-    "revision": "008d8ee0f82a3b8e01a3d6356ec9fbd9"
+    "revision": "59110359b2fb60e92a0c6fa5ff644331"
   },
   {
     "url": "manifest.webmanifest",
@@ -63,12 +63,12 @@ const { NavigationRoute } = workbox.routing
 
 const navigationRoute = new NavigationRoute(async ({ event }) => {
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/web`), ``)
+  pathname = pathname.replace(new RegExp(`^/color-collect`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/web/app-fae6633a4e378c9bd458.js`))) {
+  if (!resources || !(await caches.match(`/color-collect/app-73358509dbaa4b391b0b.js`))) {
     return await fetch(event.request)
   }
 
@@ -81,7 +81,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/web/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/color-collect/offline-plugin-app-shell-fallback/index.html`
   return await caches.match(offlineShell)
 })
 
