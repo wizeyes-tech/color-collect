@@ -41,4 +41,7 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
+  // If you use a custom domain, don’t add a pathPrefix as it will break navigation on your site.
+  // Path prefixing is only necessary when the site is not at the root of the domain like with repository sites.
+  pathPrefix: "/web",
 }
