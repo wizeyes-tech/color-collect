@@ -20,7 +20,7 @@ const HeaderCN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) =
           {/*<Img fixed={iconClose} title="Close Menu" alt="Close Menu" />*/}
         </div>
         <div className={styles.menuList}>
-          <Link to={`/`}>探索色卡</Link>
+          {/*<Link to={`/`}>探索色卡</Link>*/}
           <Link to={`/`}>合作应用</Link>
         </div>
       </div>

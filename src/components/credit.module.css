@@ -2,10 +2,8 @@
   margin: 64px 0;
 }
 
-@media (min-width: 600px) {
-  .credits-wrapper  h2 {
-    text-align: center;
-  }
+.credits-wrapper h2 {
+  font-weight: 600;
 }
 
 .credits {
@@ -27,4 +25,19 @@
 
 .credit h3 {
   margin: 6px 0 0 0;
+}
+
+@media (min-width: 600px) {
+  .credits-wrapper h2 {
+    text-align: center;
+    margin: 6rem 0 3rem;
+  }
+
+  .credit {
+    padding: 32px;
+  }
+
+  .credit h3 {
+    font-size: 16px;
+  }
 }

@@ -20,7 +20,7 @@ const HeaderEN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) =
           {/*<Img fixed={iconClose} title="Close Menu" alt="Close Menu" />*/}
         </div>
         <div className={styles.menuList}>
-          <Link to={`/`}>Palettes</Link>
+          {/*<Link to={`/`}>Palettes</Link>*/}
         </div>
       </div>
     </header>

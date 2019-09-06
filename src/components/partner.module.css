@@ -5,18 +5,18 @@
 @media (min-width: 600px) {
   .partners-wrapper h2 {
     text-align: center;
+    margin: 6rem 0 3rem;
   }
 
   .partners {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 32px;
+    grid-gap: 48px 32px;
   }
 }
 
 .partner {
   padding: 4px;
-  margin: 48px 0;
   display: grid;
   grid-template-columns: 88px 1fr;
   grid-gap: 16px;

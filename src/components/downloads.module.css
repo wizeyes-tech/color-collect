@@ -1,0 +1,36 @@
+.download-item {
+  display: inline-block;
+  margin: 0 12px 0 0;
+}
+
+.download-item:last-child {
+  margin-right: 0;
+}
+
+.download-item img {
+  margin: 0;
+}
+
+.download-desktop {
+  display: none;
+  width: 64px;
+  height: 64px;
+}
+
+@media (min-width: 600px) {
+  .download-item {
+    margin: 0 0 24px 0;
+  }
+
+  .download-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .download-mobile {
+    display: none;
+  }
+
+  .download-desktop {
+    display: block;
+  }
+}

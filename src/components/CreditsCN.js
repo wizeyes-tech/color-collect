@@ -1,7 +1,7 @@
 import React from "react"
 import Credit from "./credit"
 import { graphql, useStaticQuery } from "gatsby"
-import styles from './credit.module.css'
+import styles from "./credit.module.css"
 
 const CreditsCN = () => {
   const imageQuery = useStaticQuery(graphql`
@@ -32,7 +32,7 @@ const CreditsCN = () => {
 
   return (
     <div className={styles.creditsWrapper}>
-      <h2 className="type--h3" style={{ fontWeight: 600 }}>特别鸣谢</h2>
+      <h2 className="type--h3">特别鸣谢</h2>
 
       <div className={styles.credits}>
         <Credit icon={imageQuery.priceTag.childImageSharp.fixed}

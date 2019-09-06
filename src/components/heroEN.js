@@ -47,11 +47,11 @@ const HeroEN = () => {
         <Downloads/>
       </div>
 
-      <Link to={"/"}
-            className={styles.paletteLink}
-      >
-        Explore palettes →
-      </Link>
+      {/*<Link to={"/"}*/}
+      {/*      className={styles.paletteLink}*/}
+      {/*>*/}
+      {/*  Explore palettes →*/}
+      {/*</Link>*/}
 
       <div className={styles.mockup}>
         <div className={styles.mockupMobile}>

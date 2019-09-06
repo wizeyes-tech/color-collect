@@ -42,3 +42,55 @@
 .downloads-wrapper {
   margin: 21px 0 0 29px;
 }
+
+.mockup {
+  margin-left: -15px;
+}
+
+.mockup-desktop {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .mockup {
+    margin-left: -96px;
+  }
+
+  .mockup-mobile {
+    display: none;
+  }
+
+  .mockup-desktop {
+    display: block;
+    text-align: center;
+  }
+
+  .content {
+    right: 46px;
+  }
+
+  .content h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-left: 18px;
+  }
+
+  .content p {
+    font-size: 16px;
+    padding: 0 4px;
+  }
+
+  .cta {
+    font-size: 16px;
+    right: 188px;
+    bottom: 108px;
+  }
+
+  .downloads-wrapper {
+    margin: 0;
+    width: 64px;
+    position: absolute;
+    bottom: 247px;
+    left: 230px;
+  }
+}
