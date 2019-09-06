@@ -4,6 +4,8 @@ import SEO from "../../../components/seo"
 import "../../../components/typography.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import TutorialVideo from "../../../videos/justlist.mp4"
+import VideoCover from "../../../images/integration/video-cover.png"
 
 const JustListPage = () => {
   const images = useStaticQuery(graphql`
@@ -71,7 +73,7 @@ const JustListPage = () => {
     }
   `)
 
-  const title = `在「番茄清单」主题中使用「色采」色卡`;
+  const title = `在「番茄清单」主题中使用「色采」色卡`
 
   return (
     <Layout language={`cn`}>
@@ -81,14 +83,9 @@ const JustListPage = () => {
         <h1 className='type-h3--cn'>{title}</h1>
 
         <h3>视频教程</h3>
-        <p>
-          <video id="video" controls="" preload="none"
-                 poster="../../../images/integration/video-cover.png"><br/>
-            <source id="mp4"
-                    src="http://qiniuimg.mozhenhau.com/mosecai.mp4"
-                    type="video/mp4"/>
-          </video>
-        </p>
+        <video controls poster={VideoCover}>
+          <source src={TutorialVideo} type="video/mp4"/>
+        </video>
 
         <h3>文字教程</h3>
         <p>到 App Store <a href={`https://apps.apple.com/cn/app/id1150993112`}
@@ -100,23 +97,23 @@ const JustListPage = () => {
                           target="_blank"
                           rel="noopener noreferrer">下载「色采」App</a>。
         </p>
-        <Img fixed={images.download.childImageSharp.fixed} title={title} alt={title} />
+        <Img fixed={images.download.childImageSharp.fixed} title={title} alt={title}/>
         {/*<img src="http://qiniuimg.mozhenhau.com/mosecai1.jpg" alt="" style={{width: 400}}/>*/}
 
         <p>进入 App 内的「灵感」界面，找到你喜欢的色卡。</p>
-        <Img fixed={images.explorePage.childImageSharp.fixed} title={title} alt={title} />
+        <Img fixed={images.explorePage.childImageSharp.fixed} title={title} alt={title}/>
         {/*<img src="http://qiniuimg.mozhenhau.com/mosecai2.jpg" alt=""/>*/}
 
         <p>进入色卡，点击右下角分享按钮</p>
-        <Img fixed={images.image3.childImageSharp.fixed} title={title} alt={title} />
+        <Img fixed={images.image3.childImageSharp.fixed} title={title} alt={title}/>
         {/*<img src="http://qiniuimg.mozhenhau.com/mosecai3.jpg" alt=""/>*/}
 
         <p>在弹出窗灰色这一行找到「番茄清单」。如果没有，就到「更多」里看看。</p>
-        <Img fixed={images.image4.childImageSharp.fixed} title={title} alt={title} />
+        <Img fixed={images.image4.childImageSharp.fixed} title={title} alt={title}/>
         {/*<img src="http://qiniuimg.mozhenhau.com/mosecai14.jpg" alt=""/>*/}
 
         <p>成功设置主题色。</p>
-        <Img fixed={images.image5.childImageSharp.fixed} title={title} alt={title} />
+        <Img fixed={images.image5.childImageSharp.fixed} title={title} alt={title}/>
         {/*<img src="http://qiniuimg.mozhenhau.com/mosecai5.jpg" alt=""/>*/}
 
       </div>

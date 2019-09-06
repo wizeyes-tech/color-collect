@@ -4,6 +4,8 @@ import SEO from "../../../components/seo"
 import "../../../components/typography.css"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
+import TutorialVideo from "../../../videos/memoryhelper.mp4"
+import VideoCover from "../../../images/integration/video-cover.png"
 
 const MemoryHelperPage = () => {
   const images = useStaticQuery(graphql`
@@ -81,14 +83,9 @@ const MemoryHelperPage = () => {
         <h1 className='type-h3--cn'>{title}</h1>
 
         <h3>视频教程</h3>
-        <p>
-          <video id="video" controls="" preload="none"
-                 poster="../../../images/integration/video-cover.png"><br/>
-            <source id="mp4"
-                    src="https://graph-bed-fjj.oss-cn-hangzhou.aliyuncs.com/ScreenRecording_07-09-2019%2011-04-03.mp4"
-                    type="video/mp4"/>
-          </video>
-        </p>
+        <video controls poster={VideoCover}>
+          <source src={TutorialVideo} type="video/mp4"/>
+        </video>
 
         <h3>文字教程</h3>
         <p>到 App Store <a href="https://apps.apple.com/cn/app/id1113262919"

@@ -242,6 +242,11 @@
   margin-left: 0;
 }
 
+.article video {
+  max-height: 400px;
+  margin: 24px 0 48px;
+}
+
 .article.ordered-title h2 {
   margin-left: -23px;
 }
