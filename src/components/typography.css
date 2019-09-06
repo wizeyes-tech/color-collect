@@ -49,7 +49,7 @@
 .type--h5 {
   margin: 0 0 1.45rem;
   padding: 0;
-  color: inherit;
+  color: #102A43;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: 500;
@@ -125,4 +125,120 @@
   font-weight: 600;
   line-height: 20px;
   text-decoration: none;
+}
+
+.type-h1--cn {
+  margin: 0 0 1.45rem;
+  padding: 0;
+  color: inherit;
+  font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.type-h2--cn {
+  margin: 0 0 1.45rem;
+  padding: 0;
+  color: inherit;
+  font-family: 'PingFang SC',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+.type-h3--cn {
+  margin: 0 0 1.45rem;
+  padding: 0;
+  color: inherit;
+  font-family: 'PingFang SC',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.type-h4--cn {
+  margin: 0 0 1.45rem;
+  padding: 0;
+  color: inherit;
+  font-family: 'PingFang SC',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  font-size: 20px;
+  line-height: 1.1;
+}
+
+.type-h5--cn {
+  margin: 0 0 1.45rem;
+  padding: 0;
+  color: inherit;
+  font-family: 'PingFang SC',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.type-h6--cn {
+  margin: 0 0 1.45rem;
+  padding: 0;
+  color: inherit;
+  font-family: 'PingFang SC',-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-weight: 600;
+  text-rendering: optimizeLegibility;
+  font-size: 16px;
+  line-height: 1.1;
+}
+
+.article img {
+  max-height: 400px;
+}
+
+.article h1 {
+  margin-bottom: 48px;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 33px;
+}
+
+.article h2 {
+  margin: 48px 0 24px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.article p {
+  margin: 18px 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.article a {
+  color: #E8368F;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #e8368f;
+}
+
+.article .gatsby-image-wrapper {
+  margin: 24px 0 48px;
+  border: 1px solid #9FB3C8;
+  border-radius: 8px;
+}
+
+@media (min-width: 600px) {
+  .article p {
+    font-size: 16px;
+  }
 }

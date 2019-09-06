@@ -29,11 +29,11 @@ const PartnersCN = () => {
       <div className={styles.partners}>
         <Partner icon={imageQuery.memoryHelper.childImageSharp.fixed}
                  name={`Memory Helper`}
-                 link={`/`}
+                 link={`/cn/integration/memory-helper`}
         />
         <Partner icon={imageQuery.fanqieqingdan.childImageSharp.fixed}
                  name={`番茄清单`}
-                 link={`/`}
+                 link={`/cn/integration/just-list`}
         />
       </div>
     </div>

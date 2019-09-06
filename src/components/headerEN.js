@@ -11,7 +11,7 @@ const HeaderEN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) =
       <Link to={`/cn/`} className={styles.language}>
         <Img fixed={iconLan} title={lanTitle} alt={lanTitle} />
       </Link>
-      <Link to="/cn/" className={styles.logo}>
+      <Link to="/" className={styles.logo}>
         <Img fixed={logo} title={siteTitle} alt={siteTitle + ` Logo`} />
       </Link>
       {/*<div className={styles.menu}>*/}

@@ -9,7 +9,7 @@ import './index.css'
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <Layout language={`en`}>
       <SEO title="Home"/>
       <Hero language={`en`} />
       <Features language={`en`} />
