@@ -4,18 +4,25 @@ import { graphql, Link, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./heroCN.module.css"
 
+// mockupMobile: file(relativePath: { eq: "mockups/faceCN.png" }) {
+//   childImageSharp {
+//     fixed(width: 203, height: 319) {
+//       base64
+//       width
+//       height
+//       src
+//       srcSet
+//     }
+//   }
+// }
 
 const HeroCN = () => {
   const data = useStaticQuery(graphql`
     query {
       mockupMobile: file(relativePath: { eq: "mockups/faceCN.png" }) {
         childImageSharp {
-          fixed(width: 203, height: 319) {
-            base64
-            width
-            height
-            src
-            srcSet
+          fluid(maxWidth: 203) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -40,7 +47,8 @@ const HeroCN = () => {
 
         <div className={styles.mockup}>
           <div className={styles.mockupMobile}>
-            <Img fixed={data.mockupMobile.childImageSharp.fixed}/>
+            {/*<Img fixed={data.mockupMobile.childImageSharp.fixed}/>*/}
+            <Img fluid={data.mockupMobile.childImageSharp.fluid}/>
           </div>
           <div className={styles.mockupDesktop}>
             <Img fixed={data.mockupDesktop.childImageSharp.fixed}/>

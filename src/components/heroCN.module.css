@@ -5,8 +5,8 @@
 .content {
   height: 240px;
   position: absolute;
-  right: 12px;
-  top: 42px;
+  right: 4px;
+  top: 22px;
   writing-mode: tb-rl;
   text-align: left;
   letter-spacing: 0.1em;
@@ -44,7 +44,11 @@
 }
 
 .mockup {
-  margin-left: -15px;
+  margin-left: -30px;
+}
+
+.mockup-mobile {
+  width: calc(100% - 135px);
 }
 
 .mockup-desktop {
@@ -67,6 +71,7 @@
 
   .content {
     right: 46px;
+    top: 60px;
   }
 
   .content h1 {
