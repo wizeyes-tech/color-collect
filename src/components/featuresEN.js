@@ -37,18 +37,18 @@ const FeaturesEN = () => {
   return (
     <div className={styles.features}>
       <Feature title={`Real-time capture`}
-               desc={`Eu facilisi ut ullamcorper aenean mattis. Eu facilisi ut ullamcorper aenean mattis.`}
+               desc={`When you pick colors through your camera, you can manually adjust the circles for your ideal shades.`}
                image={imageQuery.cameraEn.childImageSharp.fluid}
       />
 
       <Feature title={`Explore 600+ palettes`}
-               desc={`Eu facilisi ut ullamcorper aenean mattis. Eu facilisi ut ullamcorper aenean mattis.`}
-               image={imageQuery.photosEn.childImageSharp.fluid}
+               desc={`We have discovered amazing colors for you from classic paintings, landscape, movies, and famous characters.`}
+               image={imageQuery.previewEn.childImageSharp.fluid}
       />
 
       <Feature title={`Photo color palettes`}
-               desc={`Eu facilisi ut ullamcorper aenean mattis. Eu facilisi ut ullamcorper aenean mattis.`}
-               image={imageQuery.previewEn.childImageSharp.fluid}
+               desc={`Discover colors from your photos. A random selection feature will explore the possibilities for you.`}
+               image={imageQuery.photosEn.childImageSharp.fluid}
       />
     </div>
   )
