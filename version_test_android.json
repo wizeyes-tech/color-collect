@@ -1,0 +1,14 @@
+{
+	"versionCode":24,
+	"versionName":"1.4.11",
+	"update":"2019-07-11",
+	"isAdmob":false,
+	"forceUpdata":2,
+	"descriptoin": "
+		1、修复了无法修改色卡名称的问题 \n
+		2、修复了一些已知的bug \n
+	",
+	"name":"ColorCapture.apk",
+	"DownloadUrl": "http://colorcapture.cc/apk/ColorCapture.apk",
+	"GooglePlay" : "https://play.google.com/store/apps/details?id=com.wizeyes.colorcapture"
+}
