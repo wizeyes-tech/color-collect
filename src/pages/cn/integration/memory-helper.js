@@ -84,7 +84,10 @@ const MemoryHelperPage = () => {
 
         <h3>视频教程</h3>
         <video controls poster={VideoCover}>
-          <source src={TutorialVideo} type="video/mp4"/>
+          {/*<source src={TutorialVideo} type="video/mp4"/>*/}
+          <source id="mp4"
+                  src="https://graph-bed-fjj.oss-cn-hangzhou.aliyuncs.com/ScreenRecording_07-09-2019%2011-04-03.mp4"
+                  type="video/mp4"/>
         </video>
 
         <h3>文字教程</h3>
@@ -97,21 +100,26 @@ const MemoryHelperPage = () => {
                           target="_blank"
                           rel="noopener noreferrer">下载「色采」App</a>。
         </p>
-        <Img fixed={images.download.childImageSharp.fixed} title={title} alt={title}/>
+        {/*<Img fixed={images.download.childImageSharp.fixed} title={title} alt={title}/>*/}
+        <img src="http://qiniuimg.mozhenhau.com/mosecai1.jpg" alt="" className="secai-img"/>
 
         <p>进入 App 内的「灵感」界面，找到你喜欢的色卡。</p>
-        <Img fixed={images.explorePage.childImageSharp.fixed} title={title} alt={title}/>
+        {/*<Img fixed={images.explorePage.childImageSharp.fixed} title={title} alt={title}/>*/}
+        <img src="http://qiniuimg.mozhenhau.com/mosecai2.jpg" alt="" className="secai-img"/>
 
         <p>进入色卡，点击右下角分享按钮</p>
 
         <p>在弹出窗灰色这一行找到「Memory Helper」。如果没有，就到「更多」里看看。</p>
-        <Img fixed={images.findApp.childImageSharp.fixed} title={title} alt={title}/>
+        {/*<Img fixed={images.findApp.childImageSharp.fixed} title={title} alt={title}/>*/}
+        <img src="https://graph-bed-fjj.oss-cn-hangzhou.aliyuncs.com/IMG_2285.JPG" alt="选择 Memory Helper"/>
 
         <p>成功设置「绯红女巫}主题色。</p>
-        <Img fixed={images.result1.childImageSharp.fixed} title={title} alt={title}/>
+        {/*<Img fixed={images.result1.childImageSharp.fixed} title={title} alt={title}/>*/}
+        <img src="https://graph-bed-fjj.oss-cn-hangzhou.aliyuncs.com/IMG_2284.PNG" alt="绯红女巫"/>
 
         <p>还能探索更多深色系主题。</p>
-        <Img fixed={images.result2.childImageSharp.fixed} title={title} alt={title}/>
+        {/*<Img fixed={images.result2.childImageSharp.fixed} title={title} alt={title}/>*/}
+        <img src="https://graph-bed-fjj.oss-cn-hangzhou.aliyuncs.com/IMG_2290.JPG" alt="青釉三系盖罐"/>
 
       </div>
     </Layout>
