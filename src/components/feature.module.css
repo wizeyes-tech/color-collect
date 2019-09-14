@@ -2,6 +2,10 @@
   margin: 64px 0;
 }
 
+.feature:last-child {
+  margin-bottom: 0;
+}
+
 @media (min-width: 600px) {
   .features {
 
