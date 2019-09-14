@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[14],{241:function(e,t,n){"use strict";n.r(t);var r=n(0),s=n.n(r);t.default=function(){return s.a.createElement("meta",{httpEquiv:"refresh",content:"0; URL='/terms-of-services'"})}}}]);
+//# sourceMappingURL=component---src-pages-terms-of-services-html-js-948dde6440e372347622.js.map

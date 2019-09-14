@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{234:function(t,n,e){"use strict";e.r(n);var i=e(0),r=e.n(i);n.default=function(){return r.a.createElement("meta",{httpEquiv:"refresh",content:"0; URL='/cn/integration/just-list'"})}}}]);
+//# sourceMappingURL=component---src-pages-cn-integration-just-list-html-js-cf9d6c5c62846012db4d.js.map

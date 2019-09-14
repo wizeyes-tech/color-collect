@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[12],{239:function(e,n,t){"use strict";t.r(n);var c=t(0),r=t.n(c);n.default=function(){return r.a.createElement("meta",{httpEquiv:"refresh",content:"0; URL='/privacy-policy'"})}}}]);
+//# sourceMappingURL=component---src-pages-privacy-policy-html-js-db1ce27944c3331be09e.js.map
