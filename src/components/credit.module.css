@@ -8,7 +8,7 @@
 
 .credits {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 12px;
   align-items: center;
   justify-content: center;
@@ -37,6 +37,10 @@
   .credits-wrapper h2 {
     text-align: center;
     margin: 6rem 0 3rem;
+  }
+
+  .credits {
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .credit {

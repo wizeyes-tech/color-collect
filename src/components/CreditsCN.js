@@ -27,6 +27,13 @@ const CreditsCN = () => {
           }
         }
       }
+      xiaozhong: file(relativePath: { eq: "credit/xiao-zhong.png" }) {
+        childImageSharp {
+          fixed(width: 70, height: 70) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -37,15 +44,19 @@ const CreditsCN = () => {
       <div className={styles.credits}>
         <Credit icon={imageQuery.priceTag.childImageSharp.fixed}
                 name={`Price Tag`}
-                link={`https://www.weibo.com/u/6087949803`}
+                link={`https://indiehacker.im/zuo-you-wen-du-you-you-sheng-ming-de-chan-pin-zh-fa48f681`}
+        />
+        <Credit icon={imageQuery.zuimei.childImageSharp.fixed}
+                name={`最美应用`}
+                link={`http://zuimeia.com/`}
         />
         <Credit icon={imageQuery.sspai.childImageSharp.fixed}
                 name={`少数派`}
                 link={`https://sspai.com/`}
         />
-        <Credit icon={imageQuery.zuimei.childImageSharp.fixed}
-                name={`最美应用`}
-                link={`http://zuimeia.com/`}
+        <Credit icon={imageQuery.xiaozhong.childImageSharp.fixed}
+                name={`小众软件`}
+                link={`https://www.appinn.com/color-collect/`}
         />
       </div>
     </div>
