@@ -44,7 +44,7 @@ const CreditsCN = () => {
       <div className={styles.credits}>
         <Credit icon={imageQuery.priceTag.childImageSharp.fixed}
                 name={`Price Tag`}
-                link={`https://indiehacker.im/zuo-you-wen-du-you-you-sheng-ming-de-chan-pin-zh-fa48f681`}
+                link={`https://www.weibo.com/u/6087949803`}
         />
         <Credit icon={imageQuery.zuimei.childImageSharp.fixed}
                 name={`最美应用`}
