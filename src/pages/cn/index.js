@@ -12,7 +12,7 @@ import '../index.css'
 const IndexPage = () => {
   return (
     <Layout language={`cn`}>
-      <SEO title="Home"/>
+      <SEO title={`色采 app 官网`}/>
       <Hero language={`cn`} />
       <Features language={`cn`} />
       <PartnersCN />
