@@ -51,23 +51,23 @@ const CreditsCN = () => {
       <div className={styles.credits}>
         <Credit icon={imageQuery.priceTag.childImageSharp.fixed}
                 name={`Price Tag`}
-                link={`https://www.weibo.com/u/6087949803`}
+                link={`https://www.weibo.com/u/6087949803?ref=色采ColorCollect`}
         />
         <Credit icon={imageQuery.zuimei.childImageSharp.fixed}
                 name={`最美应用`}
-                link={`http://zuimeia.com/`}
+                link={`http://zuimeia.com/?ref=色采ColorCollect`}
         />
         <Credit icon={imageQuery.sspai.childImageSharp.fixed}
                 name={`少数派`}
-                link={`https://sspai.com/`}
+                link={`https://sspai.com/?ref=色采ColorCollect`}
         />
         <Credit icon={imageQuery.xiaozhong.childImageSharp.fixed}
                 name={`小众软件`}
-                link={`https://www.appinn.com/color-collect/`}
+                link={`https://www.appinn.com/color-collect/?ref=色采ColorCollect`}
         />
         <Credit icon={imageQuery.appso.childImageSharp.fixed}
                 name={`appso`}
-                link={`https://www.ifanr.com/app/1268650`}
+                link={`https://www.ifanr.com/app/1268650?ref=色采ColorCollect`}
         />
       </div>
     </div>
