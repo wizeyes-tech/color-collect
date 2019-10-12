@@ -34,6 +34,13 @@ const CreditsCN = () => {
           }
         }
       }
+      appso: file(relativePath: { eq: "credit/appso.png" }) {
+        childImageSharp {
+          fixed(width: 70, height: 70) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -57,6 +64,10 @@ const CreditsCN = () => {
         <Credit icon={imageQuery.xiaozhong.childImageSharp.fixed}
                 name={`小众软件`}
                 link={`https://www.appinn.com/color-collect/`}
+        />
+        <Credit icon={imageQuery.appso.childImageSharp.fixed}
+                name={`appso`}
+                link={`https://www.ifanr.com/app/1268650`}
         />
       </div>
     </div>
