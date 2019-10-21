@@ -43,6 +43,15 @@ const HeroEN = () => {
       <h1 className={styles.title}>Color Collect</h1>
       <p className={styles.subtitle}>A color app for everyone.</p>
 
+      <div className={styles.productHunt}>
+        <a
+          href="https://www.producthunt.com/posts/color-collect?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-color-collect"
+          target="_blank">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=165523&theme=light"
+               alt="Color Collect - A color app for every one. | Product Hunt Embed"/>
+        </a>
+      </div>
+
       <div className={styles.downloads}>
         <Downloads iosTitle={`Download Color Collect for iOS`}
                    iosLink={`https://apps.apple.com/app/id1439521846`}

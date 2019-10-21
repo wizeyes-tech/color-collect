@@ -45,6 +45,11 @@
   display: none;
 }
 
+.product-hunt {
+  margin-top: 24px;
+  width: 170px;
+}
+
 @media (min-width: 600px) {
   .note {
     font-weight: 600;
@@ -74,5 +79,9 @@
 
   .mockup-desktop {
     display: block;
+  }
+
+  .product-hunt {
+    width: 250px;
   }
 }
