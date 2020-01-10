@@ -5,7 +5,7 @@ import "../components/typography.css"
 
 const TermsPage = () => {
   return (
-    <Layout language={`en`}>
+    <Layout language={`en`} lanLink={`/cn/terms/`}>
       <SEO title={`Terms of Use`}/>
       <div className="article">
         <h1>Terms of Service</h1>

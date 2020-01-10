@@ -5,7 +5,7 @@ import "../components/typography.css"
 
 const PolicyPage = () => {
   return (
-    <Layout language={`en`}>
+    <Layout language={`en`} lanLink={`/cn/privacy/`}>
       <SEO title="Privacy Policy"/>
       <div className="article ordered-title">
         <h1>Privacy Policy</h1>

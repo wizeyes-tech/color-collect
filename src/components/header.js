@@ -5,7 +5,7 @@ import HeaderCN from "./headerCN"
 import { graphql, useStaticQuery } from "gatsby"
 
 
-const Header = ({ language }) => {
+const Header = ({ language, lanLink }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -85,6 +85,7 @@ const Header = ({ language }) => {
                 iconClose={data.iconClose.childImageSharp.fixed}
                 iconLan={data.iconLanCN.childImageSharp.fixed}
                 lanTitle={`访问色采中文网站`}
+                lanLink={lanLink}
       />
     )
   } else if (language === 'cn') {
@@ -95,6 +96,7 @@ const Header = ({ language }) => {
                 iconClose={data.iconClose.childImageSharp.fixed}
                 iconLan={data.iconLanEN.childImageSharp.fixed}
                 lanTitle={`Visit Color Collect Website in English`}
+                lanLink={lanLink}
       />
     )
   }

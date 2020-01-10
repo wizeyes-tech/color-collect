@@ -12,7 +12,7 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
-const Layout = ({ children, language }) => {
+const Layout = ({ children, language, lanLink }) => {
 
   function FooterFrag() {
     if (language === "en") {
@@ -41,7 +41,7 @@ const Layout = ({ children, language }) => {
   return (
     <Fragment>
       <div className="wrapper">
-        <Header language={language}/>
+        <Header language={language} lanLink={lanLink} />
         <main>{children}</main>
       </div>
       <FooterFrag/>

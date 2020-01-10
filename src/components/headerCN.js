@@ -5,10 +5,13 @@ import React from "react"
 import styles from "./header.module.css"
 
 
-const HeaderCN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle }) => {
+const HeaderCN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle, lanLink }) => {
+  const defaultLanLink = '/';
+  const languageChange = lanLink ? lanLink : defaultLanLink;
+
   return (
     <header className={styles.header}>
-      <Link to={`/`} className={styles.language}>
+      <Link to={languageChange} className={styles.language}>
         <Img fixed={iconLan} title={lanTitle} alt={lanTitle}/>
       </Link>
       <Link to="/cn/" className={styles.logo}>
