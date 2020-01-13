@@ -40,7 +40,7 @@ const Footer = ({
       <div className="wrapper">
 
         <div className={styles.mobile}>
-          <span className="type--body-xsmall type--on-dark">© {new Date().getFullYear()} All rights reserved</span>
+          <span className="type--body-xsmall type--on-dark">© {new Date().getFullYear()} All rights reserved WizEyes Tech Inc.</span>
         </div>
 
         <div className={styles.desktop}>
@@ -58,7 +58,7 @@ const Footer = ({
           />
 
           <div className={styles.copyrightPolicy}>
-            <div>© {new Date().getFullYear()} All rights reserved</div>
+            <div>© {new Date().getFullYear()} All rights reserved WizEyes Tech Inc.</div>
             <div className={styles.policy}>
               <Link to={"/privacy-policy"}>{policyTitle}</Link>
               <Link to={"/terms-of-services"}>{termsTitle}</Link>
