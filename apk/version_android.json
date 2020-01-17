@@ -1,0 +1,14 @@
+{
+	"versionCode":44,
+	"versionName":"1.5.13",
+	"update":"2020-1-7",
+	"isAdmob":false,
+	"forceUpdata":2,
+	"descriptoin": "
+		1、修复了相机与相册生成色卡没有自动刷新专属列表的问题 \n
+		2、优化了添加删除专属色卡的逻辑 \n
+	",
+	"name":"ColorCapture.apk",
+	"DownloadUrl": "http://colorcapture.cc/apk/ColorCapture.apk",
+	"GooglePlay" : "https://play.google.com/store/apps/details?id=com.wizeyes.colorcapture"
+}
