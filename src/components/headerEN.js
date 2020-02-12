@@ -11,9 +11,9 @@ const HeaderEN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle, lan
 
   return (
     <header className={styles.header}>
-      <Link to={languageChange} className={styles.language}>
+      <a href="https://colorcollect.cn/" className={styles.language}>
         <Img fixed={iconLan} title={lanTitle} alt={lanTitle} />
-      </Link>
+      </a>
       <Link to="/" className={styles.logo}>
         <Img fixed={logo} title={siteTitle} alt={siteTitle + ` Logo`} />
       </Link>
