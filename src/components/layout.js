@@ -24,6 +24,7 @@ const Layout = ({ children, language, lanLink }) => {
                      iosLink={`https://apps.apple.com/app/id1439521846`}
                      androidTitle={`Download Color Collect for Android`}
                      androidLink={`https://play.google.com/store/apps/details?id=com.wizeyes.colorcapture`}
+                     copyright="All rights reserved WizEyes Tech Inc."
       />
     } else {
       return <Footer homeLink={`/cn/`}
@@ -34,6 +35,7 @@ const Layout = ({ children, language, lanLink }) => {
                      iosLink={`https://apps.apple.com/cn/app/id1439521846`}
                      androidTitle={`下载色采安卓版本`}
                      androidLink={`https://www.coolapk.com/apk/231885`}
+                     copyright="版权所有 福州台江区求实贸易有限公司"
       />
     }
   }

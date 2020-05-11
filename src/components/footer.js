@@ -9,7 +9,8 @@ const Footer = ({
                   creditLink, creditTitle,
                   policyTitle, termsTitle,
                   iosTitle, iosLink,
-                  androidTitle, androidLink
+                  androidTitle, androidLink,
+                  copyright,
                 }) => {
   function HomeNav() {
     if (homeLink) {
@@ -58,7 +59,7 @@ const Footer = ({
           />
 
           <div className={styles.copyrightPolicy}>
-            <div>© {new Date().getFullYear()} All rights reserved WizEyes Tech Inc.</div>
+            <div>© {new Date().getFullYear()} {copyright}</div>
             <div className={styles.policy}>
               <Link to={"/privacy-policy"}>{policyTitle}</Link>
               <Link to={"/terms-of-services"}>{termsTitle}</Link>
