@@ -19,7 +19,9 @@ const Layout = ({ children, language, lanLink }) => {
       return <Footer homeLink={`/`}
                      homeTitle={`Home`}
                      policyTitle={`Privacy Policy`}
+                     policyLink={`/privacy-policy`}
                      termsTitle={`Terms of Use`}
+                     termsLink={`/terms-of-services`}
                      iosTitle={`Download Color Collect for iOS`}
                      iosLink={`https://apps.apple.com/app/id1439521846`}
                      androidTitle={`Download Color Collect for Android`}
@@ -30,7 +32,9 @@ const Layout = ({ children, language, lanLink }) => {
       return <Footer homeLink={`/cn/`}
                      homeTitle={`首页`}
                      policyTitle={`隐私条款`}
+                     policyLink={`/cn/privacy`}
                      termsTitle={`使用条款`}
+                     termsLink={`/cn/terms`}
                      iosTitle={`从苹果商店下载色采 iOS 版本`}
                      iosLink={`https://apps.apple.com/cn/app/id1439521846`}
                      androidTitle={`下载色采安卓版本`}

@@ -7,7 +7,7 @@ const Footer = ({
                   homeLink, homeTitle,
                   integrationLink, integrationTitle,
                   creditLink, creditTitle,
-                  policyTitle, termsTitle,
+                  policyTitle, policyLink, termsTitle, termsLink,
                   iosTitle, iosLink,
                   androidTitle, androidLink,
                   copyright,
@@ -61,8 +61,8 @@ const Footer = ({
           <div className={styles.copyrightPolicy}>
             <div>© {new Date().getFullYear()} {copyright}</div>
             <div className={styles.policy}>
-              <Link to={"/privacy-policy"}>{policyTitle}</Link>
-              <Link to={"/terms-of-services"}>{termsTitle}</Link>
+              <Link to={policyLink}>{policyTitle}</Link>
+              <Link to={termsLink}>{termsTitle}</Link>
             </div>
           </div>
 
