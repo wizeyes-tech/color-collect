@@ -33,13 +33,11 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build && cp -r ./src/androidapk/* public",
-    "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
-    "deploy": "gh-pages -d public",
-    "deploy:s3": "gatsby-plugin-s3 deploy"
+    "deploy": "gh-pages -d public"
   },
   "repository": {
     "type": "git",
