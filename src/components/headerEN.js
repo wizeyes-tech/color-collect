@@ -5,10 +5,7 @@ import React from "react"
 import styles from "./header.module.css"
 
 
-const HeaderEN = ({ siteTitle, logo, iconMenu, iconClose, iconLan, lanTitle, lanLink }) => {
-  const defaultLanLink = '/cn';
-  const languageChange = lanLink ? lanLink : defaultLanLink;
-
+const HeaderEN = ({ siteTitle, logo, iconLan, lanTitle }) => {
   return (
     <header className={styles.header}>
       <a href="https://colorcollect.cn/" className={styles.language}>

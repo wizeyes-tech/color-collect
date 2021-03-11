@@ -1,20 +1,8 @@
 import React from "react"
 import Downloads from "./downloads"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import styles from "./heroCN.module.css"
-
-// mockupMobile: file(relativePath: { eq: "mockups/faceCN.png" }) {
-//   childImageSharp {
-//     fixed(width: 203, height: 319) {
-//       base64
-//       width
-//       height
-//       src
-//       srcSet
-//     }
-//   }
-// }
 
 const HeroCN = () => {
   const data = useStaticQuery(graphql`
