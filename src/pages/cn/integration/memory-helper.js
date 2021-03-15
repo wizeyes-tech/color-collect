@@ -2,76 +2,74 @@ import React from "react"
 import Layout from "../../../components/layout"
 import SEO from "../../../components/seo"
 import "../../../components/typography.css"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import TutorialVideo from "../../../videos/memoryhelper.mp4"
+// import { graphql, useStaticQuery } from "gatsby"
 import VideoCover from "../../../images/integration/video-cover.png"
 
 const MemoryHelperPage = () => {
-  const images = useStaticQuery(graphql`
-    query {
-     
-      download: file(relativePath: { eq: "integration/download.jpg" }) {
-        childImageSharp {
-          fixed(width: 350) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-      
-      explorePage: file(relativePath: { eq: "integration/explore-page.jpg" }) {
-        childImageSharp {
-          fixed(width: 230) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-      
-      findApp: file(relativePath: { eq: "integration/memoryhelper/memoryhelper01.jpg" }) {
-        childImageSharp {
-          fixed(width: 230) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-      
-      result1: file(relativePath: { eq: "integration/memoryhelper/memoryhelper02.png" }) {
-        childImageSharp {
-          fixed(width: 230) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-      
-      result2: file(relativePath: { eq: "integration/memoryhelper/memoryhelper03.jpg" }) {
-        childImageSharp {
-          fixed(width: 230) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-    }
-  `)
+  // const images = useStaticQuery(graphql`
+  //   query {
+  //
+  //     download: file(relativePath: { eq: "integration/download.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 350) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //
+  //     explorePage: file(relativePath: { eq: "integration/explore-page.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 230) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //
+  //     findApp: file(relativePath: { eq: "integration/memoryhelper/memoryhelper01.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 230) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //
+  //     result1: file(relativePath: { eq: "integration/memoryhelper/memoryhelper02.png" }) {
+  //       childImageSharp {
+  //         fixed(width: 230) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //
+  //     result2: file(relativePath: { eq: "integration/memoryhelper/memoryhelper03.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 230) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   const title = `在「Memory Helper」主题中使用「色采」色卡`
 

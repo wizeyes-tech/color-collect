@@ -2,76 +2,76 @@ import React from "react"
 import Layout from "../../../components/layout"
 import SEO from "../../../components/seo"
 import "../../../components/typography.css"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import TutorialVideo from "../../../videos/justlist.mp4"
+// import { graphql, useStaticQuery } from "gatsby"
+// import Img from "gatsby-image"
+// import TutorialVideo from "../../../videos/justlist.mp4"
 import VideoCover from "../../../images/integration/video-cover.png"
 
 const JustListPage = () => {
-  const images = useStaticQuery(graphql`
-    query {
-     
-      download: file(relativePath: { eq: "integration/download.jpg" }) {
-        childImageSharp {
-          fixed(width: 350) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-      
-      explorePage: file(relativePath: { eq: "integration/explore-page.jpg" }) {
-        childImageSharp {
-          fixed(width: 230) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-      
-      image3: file(relativePath: { eq: "integration/justlist/justlist03.jpg" }) {
-        childImageSharp {
-          fixed(width: 230) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-      
-      image4: file(relativePath: { eq: "integration/justlist/justlist04.jpg" }) {
-        childImageSharp {
-          fixed(width: 230) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-      
-      image5: file(relativePath: { eq: "integration/justlist/justlist05.jpg" }) {
-        childImageSharp {
-          fixed(width: 230) {
-            base64
-            width
-            height
-            src
-            srcSet
-          }
-        }
-      }
-    }
-  `)
+  // const images = useStaticQuery(graphql`
+  //   query {
+  //
+  //     download: file(relativePath: { eq: "integration/download.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 350) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //
+  //     explorePage: file(relativePath: { eq: "integration/explore-page.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 230) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //
+  //     image3: file(relativePath: { eq: "integration/justlist/justlist03.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 230) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //
+  //     image4: file(relativePath: { eq: "integration/justlist/justlist04.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 230) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //
+  //     image5: file(relativePath: { eq: "integration/justlist/justlist05.jpg" }) {
+  //       childImageSharp {
+  //         fixed(width: 230) {
+  //           base64
+  //           width
+  //           height
+  //           src
+  //           srcSet
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
   const title = `在「番茄清单」主题中使用「色采」色卡`
 
