@@ -1,11 +1,13 @@
-.download-item {
-  display: inline-block;
-  margin: 0 12px 0 0;
-  transition: filter 500ms ease 0s;
+.download-wrapper {
+  display: grid;
+  grid-template-columns: 120px 58px;
+  align-items: center;
+  grid-gap: 12px;
 }
 
-.download-item:last-child {
-  margin-right: 0;
+.download-item {
+  display: block;
+  transition: filter 500ms ease 0s;
 }
 
 .download-item:hover {
@@ -23,14 +25,6 @@
 }
 
 @media (min-width: 600px) {
-  .download-item {
-    margin: 0 12px 24px 0;
-  }
-
-  .download-item:last-child {
-    margin-bottom: 0;
-  }
-
   .download-mobile {
     display: none;
   }

@@ -2,22 +2,9 @@ import React, { Fragment } from "react"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import styles from "./downloads.module.css"
+import iosBadge from "../images/button/ios-app-store-badge.svg"
 
 const Downloads = ({ iosTitle, iosLink, androidTitle, androidLink, size = `m` }) => {
-
-  function IosImageDesktop() {
-    if (size === "s") {
-      return <Img fixed={data.iosSmall.childImageSharp.fixed}
-                  title={iosTitle}
-                  alt={iosTitle}
-      />
-    } else {
-      return <Img fixed={data.iosMedium.childImageSharp.fixed}
-                  title={iosTitle}
-                  alt={iosTitle}
-      />
-    }
-  }
 
   function AndroidImageDesktop() {
     if (size === "s") {
@@ -35,7 +22,7 @@ const Downloads = ({ iosTitle, iosLink, androidTitle, androidLink, size = `m` })
 
   const data = useStaticQuery(graphql`
     query {
-      iosSmall: file(relativePath: { eq: "button/download-ios.png" }) {
+      iosSmall: file(relativePath: { eq: "button/ios-app-store-badge.svg" }) {
         childImageSharp {
           fixed(width: 48, height: 48) {
             base64
@@ -59,7 +46,7 @@ const Downloads = ({ iosTitle, iosLink, androidTitle, androidLink, size = `m` })
         }
       }
       
-      iosMedium: file(relativePath: { eq: "button/download-ios.png" }) {
+      iosMedium: file(relativePath: { eq: "button/ios-app-store-badge.svg" }) {
         childImageSharp {
           fixed(width: 64, height: 64) {
             base64
@@ -86,18 +73,15 @@ const Downloads = ({ iosTitle, iosLink, androidTitle, androidLink, size = `m` })
   `)
 
   return (
-    <Fragment>
+    <div className={styles.downloadWrapper}>
       <a href={iosLink}
          className={styles.downloadItem}
       >
-        <span className={styles.downloadMobile}>
-          <Img fixed={data.iosSmall.childImageSharp.fixed}
+        <span>
+          <img src={iosBadge}
                title={iosTitle}
                alt={iosTitle}
           />
-        </span>
-        <span className={styles.downloadDesktop}>
-          <IosImageDesktop/>
         </span>
       </a>
       <a href={androidLink}
@@ -113,7 +97,7 @@ const Downloads = ({ iosTitle, iosLink, androidTitle, androidLink, size = `m` })
           <AndroidImageDesktop/>
         </span>
       </a>
-    </Fragment>
+    </div>
   )
 }
 
