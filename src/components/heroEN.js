@@ -55,8 +55,6 @@ const HeroEN = () => {
       <div className={styles.downloads}>
         <Downloads iosTitle={`Download Color Collect for iOS`}
                    iosLink={`https://apps.apple.com/app/id1439521846`}
-                   androidTitle={`Download Color Collect for Android`}
-                   androidLink={`https://play.google.com/store/apps/details?id=com.wizeyes.colorcapture`}
         />
       </div>
 

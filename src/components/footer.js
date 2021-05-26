@@ -51,12 +51,7 @@ const Footer = ({
             <CreditNav/>
           </div>
 
-          <Downloads size={`s`}
-                     iosTitle={iosTitle}
-                     iosLink={iosLink}
-                     androidTitle={androidTitle}
-                     androidLink={androidLink}
-          />
+          <Downloads iosTitle={iosTitle} iosLink={iosLink}/>
 
           <div className={styles.copyrightPolicy}>
             <div>© {new Date().getFullYear()} {copyright}</div>

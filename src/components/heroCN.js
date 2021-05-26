@@ -57,8 +57,6 @@ const HeroCN = () => {
         <div className={styles.downloadsWrapper}>
           <Downloads iosTitle={`从苹果商店下载色采 iOS 版本`}
                      iosLink={`https://apps.apple.com/cn/app/id1439521846`}
-                     androidTitle={`下载色采安卓版本`}
-                     androidLink={`https://www.coolapk.com/apk/231885`}
           />
         </div>
       </div>
