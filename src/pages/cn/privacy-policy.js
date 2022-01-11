@@ -55,13 +55,124 @@ const TermsPageCN = () => {
           我们为你提供的功能和服务是不断更新和发展的，如果某一项功能需要获取其他信息，我们会提前在官网、版本更新中另行向你说明。
         </p>
 
-        <h2>1.2 IMEI/Mac地址的使用</h2>
-        <p>请务必知晓：IMEI/Mac地址对于用户极其敏感，色采不会收集任何相关数据。</p>
-
-        <h2>1.3 第三方SDK的使用</h2>
+        <h2>1.2 第三方SDK的使用</h2>
         <ul>
-          <li>支付宝SDK用于在色采客户端，调用支付宝客户端完成购买付费功能，并未涉及任何敏感信息。</li>
-          <li>微信SDK用于支持用户通过微信客户端来直接注册/登录色采，仅提供 unionid、微信昵称、性别、头像给色采，目的是作为用户唯一标识。</li>
+          <li>
+            支付宝SDK用于在色采客户端，调用支付宝客户端完成购买付费功能。
+            需要收集您的个人设备信息(包含:硬件型号、设备MAC地址、IMEI、IMSI)、登录IP地址、订单支付相关信息、订单安全相关设备信息及其他反洗钱法律要求的必要信息。
+          </li>
+          <li>
+            微信SDK用于支付、支持用户通过微信客户端来直接注册/登录色采，仅提供 unionid、微信昵称、性别、头像给色采，目的是作为用户唯一标识。
+            需要收集您的个人设备信息(包含:硬件型号、设备MAC地址、IMEI、IMSI)、登录IP地址、订单支付相关信息、订单安全相关设备信息及其他反洗钱法律要求的必要信息。
+          </li>
+        </ul>
+
+        <h2>1.3 Android客户端调用权限与用途说明</h2>
+        <ul>
+          <li>
+            <div>
+              联网功能
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.INTERNET&quto; /&gt;
+            </div>
+            <div>
+              该权限用于App连接网络功能
+            </div>
+          </li>
+          <li>
+            <div>
+              获取网络状态
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.ACCESS_NETWORK
+              _STATE&quto; /&gt;
+            </div>
+            <div>
+              该权限用于在网络不好时连接到移动网络
+            </div>
+          </li>
+          <li>
+            <div>
+              获取WIFI状态
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.ACCESS_WIFI_STATE
+              &quto; /&gt;
+            </div>
+            <div>
+              该权限用于App连接网络功能
+            </div>
+          </li>
+          <li>
+            <div>
+              写入文件
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.WRITE_EXTERNAL
+              _STORAGE&quto; /&gt;
+            </div>
+            <div>
+              该权限用于保存图片、文件、App数据到手机本地
+            </div>
+          </li>
+          <li>
+            <div>
+              读取文件
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.READ_EXTERNAL
+              _STORAGE&quto; /&gt;
+            </div>
+            <div>
+              该权限用于App相册模块获取手机相册
+            </div>
+          </li>
+          <li>
+            <div>
+              照相机
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.CAMERA&quto; /&gt;
+            </div>
+            <div>
+              该权限用于手机实时取色功能
+            </div>
+          </li>
+          <li>
+            <div>
+              振动权限
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.VIBRATE&quto; /&gt;
+            </div>
+            <div>
+              该权限用于按钮触控反馈
+            </div>
+          </li>
+          <li>
+            <div>
+              壁纸权限
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.SET_WALLPAPER&quto; /&gt;
+            </div>
+            <div>
+              该权限用于设置壁纸功能
+            </div>
+          </li>
+          <li>
+            <div>
+              安装应用权限
+            </div>
+            <div>
+              &lt;uses-permission android:name=&quto;android.permission.REQUEST_INSTALL
+              _PACKAGES&quto; /&gt;
+            </div>
+            <div>
+              该权限用于更新App
+            </div>
+          </li>
         </ul>
 
         <p>需要额外说明的是，微信SDK遵循了欧盟GDPR政策，所以上述第三方授权提供的信息，色采也会遵照GDPR进行管理。</p>
@@ -114,10 +225,15 @@ const TermsPageCN = () => {
         <p>色采请求设备信息权限用于注册和登录时的账号认证和绑定功能。</p>
 
         <h2>9、数据安全与注销</h2>
-          <p>色采承诺在现有技术许可的范围内采取合理必要的预防措施保护用户的数据安全，我们会在合理商业运作的基础上，采取尽可能完备的措施保护您存放在Todo清单中的数据。您的个人信息和数据受到多重保护，包括人员的、电子的和程序上的。</p>
-          <p>如果色采得知安全系统漏洞，我们可能联络您提供给我们的电子邮件地址或在我们的网站上发布通知，以试图告知您并提供关于保护措施（如适用）的信息。</p>
-          <p>如您需要注销账户，请登录色采移动端，进入「头像」-「注销」自行删除账户。在注销账户之后，我们将停止为您提供产品或服务，并依据您的要求，删除您的个人信息，但法律法规另有规定的除外。</p>
-          
+        <p>
+          色采承诺在现有技术许可的范围内采取合理必要的预防措施保护用户的数据安全，我们会在合理商业运作的基础上，采取尽可能完备的措施保护您存放在Todo清单中的数据。
+          您的个人信息和数据受到多重保护，包括人员的、电子的和程序上的。
+        </p>
+        <p>如果色采得知安全系统漏洞，我们可能联络您提供给我们的电子邮件地址或在我们的网站上发布通知，以试图告知您并提供关于保护措施（如适用）的信息。</p>
+        <p>
+          如您需要注销账户，请登录色采移动端，进入「头像」-「注销」自行删除账户。
+          在注销账户之后，我们将停止为您提供产品或服务，并依据您的要求，删除您的个人信息，但法律法规另有规定的除外。
+        </p>
         <h2>10、修改与更新</h2>
         <p>
           由于本隐私政策可能不时被更新，您应定期查看以了解我们保护所收集之个人信息的方案及程序。您继续使用色采服务即构成您对本隐私政策及其任何更新版本的同意。
@@ -133,7 +249,7 @@ const TermsPageCN = () => {
           {/* <li>信息保护负责人联系电话：18120807667</li> */}
         </ul>
 
-        <p>更新时间：2021.09.06</p>
+        <p>更新时间：2022.01.1</p>
       </div>
     </Layout>
   )
